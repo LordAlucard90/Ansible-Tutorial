@@ -67,7 +67,7 @@ The precedence of the variable specification is:
 Further is also possible to specify single properties as environment variables,
 usually the naming convention is `ANSIBLE_<property>` but it is always better
 to check the 
-[documentation](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
+[config documentation](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
 first.
 
 In order to list all the available configurations it is possible to use:
