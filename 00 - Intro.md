@@ -2,7 +2,7 @@
 
 ## Content
 
-- [What is Ansible ](#what-is-ansible)
+- [What is Ansible](#what-is-ansible)
 - [Installation](#installation)
 - [Configuration](#configuration)
 - [Inventory](#inventory)
@@ -49,7 +49,6 @@ ansible-config init --disabled > ansible.cfg
 # include all plugins
 ansible-config init --disabled -t all > ansible.cfg
 ```
-
 
 The configuration file in the default location will contain the default values,
 other than that, a configuration file can be set up in any working directory
@@ -127,8 +126,7 @@ The server can be configured with additional parameter:
 - `ansible_port`: the port user for the connection, default 22
 - `ansible_user`: the user name to log, default root for Linux and administrator
 for Windows.
-- `ansible_ssh_pass`: the password for ssh
-- `ansible_password`: the password for winrm
+- `ansible_pass`: the password for ssh
 
 The different properties are set on the same line with a space separator:
 ```ini

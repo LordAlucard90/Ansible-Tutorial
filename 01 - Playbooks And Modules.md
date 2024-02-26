@@ -11,8 +11,6 @@
 - [Conditionals](#conditionals)
 - [Modules](#modules)
 - [Plugins](#plugins)
-- [](#)
-- [](#)
 
 ---
 
@@ -45,7 +43,6 @@ An example of playbook is:
     - name: Say hello
       command: 'echo "Hello"'
 
-
 - name: Play 2
   hosts: localhost
   tasks:
@@ -54,6 +51,12 @@ An example of playbook is:
 
     - name: Print date
       command: date
+```
+
+The tasks can also be moved to a separate file under `tasks/<file_name>.yaml`
+and included in the playbook using:
+```yaml
+   - include_tasks: tasks/<file_name>.yaml
 ```
 
 ### Play Parameters
@@ -145,11 +148,12 @@ ansible-lint <playbook_name>.yaml
 
 ## Variables
 
-Variables can be defined in a dedicated files named following the tag name,
+Variables can be defined in a dedicated file named following the tag name,
 for example `<tag_name>.yaml`.
 
-After that can be referenced using Jinja2 Templating: `'{{ variable_name }}'`,
-it is important to enclose it inside single quotes `'...'`.
+After that, they can be referenced using Jinja2 Templating:
+`'{{ variable_name }}'`, it is important to enclose it inside single quotes
+`'...'`.
 
 ### Variable Types
 
@@ -238,7 +242,11 @@ and is available in the playbook execution.
 
 Another way to use the debug module, is to add the `-v` flag:
 ```bash
+# the number of v defines the verbose level
 ansible-playbook -i inventory playbook.yml -v
+ansible-playbook -i inventory playbook.yml -vv
+ansible-playbook -i inventory playbook.yml -vvv
+ansible-playbook -i inventory playbook.yml -vvvv
 ```
 
 ### Scoping
@@ -259,8 +267,8 @@ scope, no matter where it is defined.
 
 #### Playbook Scope
 
-In this case a variable is only defined a play, and will be not visible in the
-others:
+In this case a variable is only defined in a play, and will be not visible in
+the others:
 ```yaml
 - name: Play1
   hosts: web1
@@ -278,6 +286,14 @@ others:
         var: example
 ```
 In this case the second run will print an empty row.
+
+The variables can be moved into a `yaml` file as follow:
+- if each host needs separate vars:\
+define an `host_vars/<host_name>.yaml` file for each host.
+- if all the hosts can have the vars:\
+put the hosts under the same group and define a 
+`group_vars/<group_name>.yaml` file.
+
 
 #### Global Scope
 
@@ -341,11 +357,11 @@ When Ansible connects to a target machine, it will collect different information
 of that machine known as facts.
 Some of this data is:
 - system architecture
-- os version
+- OS version
 - processor details
 - memory details
 - network connectivity
-- ip addres
+- IP address
 - disks
 - volumes
 - mounts
@@ -512,6 +528,8 @@ The complete list can be found in the
 or in the terminal using
 ```bash
 ansible-doc -l
+# specific module info
+ansible-doc <module_name>
 ```
 
 A module can take the execution info in two ways:
@@ -572,6 +590,7 @@ this allows the script to run N times having always the same result.
 An example of Idempotency is the service, in this case it is a good practice
 to set the requested state as `started`, therefore if the service is not running
 it is started, but if it is already running nothing will be done.
+
 
 ## Plugins
 
