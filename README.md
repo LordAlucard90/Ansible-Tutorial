@@ -25,6 +25,11 @@ different sections, they are not strictly related to the course sections/videos.
     - [Roles](./02%20-%20Roles.md#roles)
     - [Ansible Galaxy](./02%20-%20Roles.md#ansible-galaxy)
     - [Collections](./02%20-%20Roles.md#collections)
-
+- [Jinja](./03%20-%20Jinja.md)
+    - [Jinja2](./03%20-%20Jinja.md#jinja2)
+    - [General](./03%20-%20Jinja.md#general)
+    - [Ansible](./03%20-%20Jinja.md#ansible)
+    - [Templates](./03%20-%20Jinja.md#templates)
+    - [File Lookup](./03%20-%20Jinja.md#file-lookup)
 
 
