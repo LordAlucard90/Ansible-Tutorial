@@ -31,5 +31,11 @@ different sections, they are not strictly related to the course sections/videos.
     - [Ansible](./03%20-%20Jinja.md#ansible)
     - [Templates](./03%20-%20Jinja.md#templates)
     - [File Lookup](./03%20-%20Jinja.md#file-lookup)
+- [Deploy Management](./04%20-%20Deploy%20Management.md)
+    - [Handlers](./04%20-%20Deploy%20Management.md#handlers)
+    - [Async Actions](./04%20-%20Deploy%20Management.md#async-actions)
+    - [Deploy Strategy](./04%20-%20Deploy%20Management.md#deploy-strategy)
+    - [Error Handling](./04%20-%20Deploy%20Management.md#error-handling)
+
 
 
