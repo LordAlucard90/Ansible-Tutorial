@@ -46,4 +46,11 @@ different sections, they are not strictly related to the course sections/videos.
     - [Dynamic Inventory](./05%20-%20Security.md#dynamic-inventory)
 
 
+- [Advanced Customization](./06%20-%20Advanced%20Customization.md)
+    - [Custom Modules](./06%20-%20Advanced%20Customization.md#custom-modules)
+    - [Custom Plugins](./06%20-%20Advanced%20Customization.md#custom-plugins)
+
+
+
+
 
