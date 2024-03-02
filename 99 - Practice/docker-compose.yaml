@@ -1,0 +1,34 @@
+services:
+  node1:
+    container_name: node1
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args: 
+        USER_PSWD: node1-secret
+    ports:
+      - 9001:22
+      - 5001:5000
+    volumes:
+      - node1-ssh:/etc/ssh
+      - node1-root-ssh:/root/.ssh
+
+  node2:
+    container_name: node2
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args: 
+        USER_PSWD: node2-secret
+    ports:
+      - 9002:22
+      - 5002:5000
+    volumes:
+      - node2-ssh:/etc/ssh
+      - node2-root-ssh:/root/.ssh
+
+volumes:
+  node1-root-ssh:
+  node1-ssh:
+  node2-root-ssh:
+  node2-ssh:

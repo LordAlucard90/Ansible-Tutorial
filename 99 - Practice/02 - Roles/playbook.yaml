@@ -1,0 +1,10 @@
+- name: Deploy a flask web application
+
+  hosts: node1,node2
+ 
+  roles:
+   - ping
+   - python
+   - mysql_db
+   - flask_web
+

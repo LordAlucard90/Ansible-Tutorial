@@ -50,6 +50,12 @@ different sections, they are not strictly related to the course sections/videos.
     - [Custom Modules](./06%20-%20Advanced%20Customization.md#custom-modules)
     - [Custom Plugins](./06%20-%20Advanced%20Customization.md#custom-plugins)
 
+- [Practice](./99%20-%20Practice/readme.md)
+    - [Intro](./99%20-%20Practice/readme.md#intro)
+    - [Setup](./99%20-%20Practice/readme.md#setup)
+    - [Run](./99%20-%20Practice/readme.md#run)
+    - [Reset](./99%20-%20Practice/readme.md#reset)
+    - [Additional Operations](./99%20-%20Practice/readme.md#additional-operations)
 
 
 
