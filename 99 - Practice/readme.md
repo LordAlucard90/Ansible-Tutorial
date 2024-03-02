@@ -26,6 +26,7 @@ The different sections are:
     - [Manual Setup](./00%20-%20Baseline/readme.md#manual-setup)
     - [Playbook](./00%20-%20Baseline/readme.md#playbook)
 1. [File Separation](./01%20-%20File%20Separation/readme.md)
+    - [Vars](./01%20-%20File%20Separation/readme.md#vars)
     - [Vars File](./01%20-%20File%20Separation/readme.md#vars-file)
     - [Tasks File](./01%20-%20File%20Separation/readme.md#tasks-file)
 1. [Roles](./02%20-%20Roles/readme.md)

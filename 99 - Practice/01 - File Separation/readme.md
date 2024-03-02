@@ -2,6 +2,7 @@
 
 ## Content
 
+- [Vars](#vars)
 - [Vars File](#vars-file)
 - [Tasks File](#tasks-file)
 
